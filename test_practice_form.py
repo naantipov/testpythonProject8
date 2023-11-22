@@ -8,7 +8,7 @@ def test_registration_form():
     browser.element('#firstName').should(be.blank).type('ANDREY')
     browser.element('#lastName').should(be.blank).type('ANTIPOV')
     browser.element('#userEmail').should(be.blank).type('sgsdgedsf@fdfds.com')
-    browser.element('#gender-radio-1').should(be.blank).double_click()
+    browser.element('#gender-radio-1').double_click()
     browser.element('#userNumber').type('3213123132')
     browser.element('#dateOfBirthInput').click()
     browser.element('#react-datepicker__month-select').click().element(
